@@ -1,0 +1,116 @@
+html {
+  font-size: 25px;
+}
+
+body {
+  background: #ececec;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Craeted refering to LittleSnippets.net Pen: https://codepen.io/littlesnippets/pen/adLELd */
+.book-frame {
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  /* perspective: 1300px; */
+}
+.book-frame img {
+  width: 300px;
+  height: 300px;
+  /* display: inline; */
+  padding: 0px;
+  margin: 0px;
+  vertical-align: middle;
+}
+.book-frame .book-details {
+  max-width: 450px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  /*  */
+  transform: translate(-50%, -50%) rotateY(90deg);
+  transform-origin: 50%;
+  background: rgba(0, 0, 0, 0.788);
+  opacity: 0;
+  transition: all 0.4s ease-in;
+  /* display: block; */
+}
+
+.book-frame:hover .book-details {
+  transform: translate(-50%, -50%) rotateY(0deg);
+  opacity: 1;
+}
+
+section .books-flex {
+  display: grid;
+  grid-gap: 0.5rem;
+  margin: 0 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+section .books-flex img {
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  vertical-align: middle;
+  object-fit: fill;
+}
+
+.btn-default {
+  border: 0.1rem solid rgb(112, 109, 109);
+  padding: 0.2rem;
+  background-color: rgb(0, 0, 0);
+  transition: color 0.25s;
+  border-color: 0.25s;
+  box-shadow: 0.25s;
+  transform: 0.25s;
+}
+
+.btn-default:hover {
+  border-color: #06552e;
+  color: #15e27b;
+  box-shadow: 0 0.5em 0.5em -0.4em #06cac0;
+  transform: translateY(-0.24em);
+  cursor: pointer;
+}
+
+/*  */
+
+.btn-secondary {
+  border: 0.1rem solid rgb(112, 109, 109);
+  padding: 0.2rem;
+  background-color: rgb(0, 0, 0);
+  transition: color 0.25s;
+  border-color: 0.25s;
+  box-shadow: 0.25s;
+  transform: 0.25s;
+}
+
+.btn-secondary:hover {
+  border-color: #e0c31f;
+  color: #e0c31f;
+  box-shadow: 0 0.5em 0.5em -0.4em #06cac0;
+  transform: translateY(-0.24em);
+  cursor: pointer;
+}
+
+/*  */
+
+.main-content .btn-default {
+  position: relative;
+  /* margin-left: 50%; */
+}
+
+.main-content .button-support {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
