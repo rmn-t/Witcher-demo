@@ -38,7 +38,7 @@
         </span>
         <span class="nav-item">
           <div class="dropdown">
-            <a href="Books.html" class="text-primary bg-primary dd-hover">
+            <a href="books.html" class="text-primary bg-primary dd-hover">
               Books<span class="text-primary bg-primary dd-icon">&#9660;</span>
             </a>
             <div class="dropdown-content bg-primary">
